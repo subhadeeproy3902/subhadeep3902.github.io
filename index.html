@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hi! I am Subha</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+                integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer">
+                </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+</head>
+
+<!--Body------------------------------------------------------------------------------------------------>
+
+
+<body onload=Clock()>
+
+        <!--Preloader----------------------------------------------------------------------------------->
+        <div class="loading-page">
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 440 512">
+                        <path
+                                d="M382.7 292.5l2.7 2.7-170-167.3c-3.5-3.5-9.7-3.7-13.8-.5L144.3 171c-4.2 3.2-4.6 8.7-1.1 12.2l68.1 64.3c3.6 3.5 9.9 3.7 14 .5l.1-.1c4.1-3.2 10.4-3 14 .5l84 81.3c3.6 3.5 3.2 9-.9 12.2l-93.2 74c-4.2 3.3-10.5 3.1-14.2-.4L63.2 268c-3.5-3.5-9.7-3.7-13.9-.5L3.5 302.4c-4.2 3.2-4.7 8.7-1.2 12.2L211 510.7s7.4 6.8 17.3-.8l198-163.9c4-3.2 4.4-8.7.7-12.2zm54.5-83.4L226.7 2.5c-1.5-1.2-8-5.5-16.3 1.1L3.6 165.7c-4.2 3.2-4.8 8.7-1.2 12.2l42.3 41.7 171.7 165.1c3.7 3.5 10.1 3.7 14.3.4l50.2-38.8-.3-.3 7.7-6c4.2-3.2 4.6-8.7.9-12.2l-57.1-54.4c-3.6-3.5-10-3.7-14.2-.5l-.1.1c-4.2 3.2-10.5 3.1-14.2-.4L109 180.8c-3.6-3.5-3.1-8.9 1.1-12.2l92.2-71.5c4.1-3.2 10.3-3 13.9.5l160.4 159c3.7 3.5 10 3.7 14.1.5l45.8-35.8c4.1-3.2 4.4-8.7.7-12.2z" />
+                </svg>
+
+                <div class="name-container">
+                        <div class="logo-name">subha</div>
+                </div>
+        </div>
+
+
+        <!--Preloader-----------------------------------------------------------------------ENDS------------>
+
+
+        <!--Header-------------------------------------------------------------------------------------->
+
+        <header>
+                <div class="logo"><a href="#home" id="logo-subha"><span id="logo-S">S</span>ubha</div></a>
+                <ul class="navlist">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div id="menu-icon" class="bx bx-menu"></div>
+        </header>
+
+
+        <!--Hero Section------------------------------------------------------------------------------------------->
+        <section id="home" class="home">
+                <div class="home-content scroll-top"><!--scroll-scale-->
+                        <h3>Hello! I'm</h3>
+                        <h1>Subhadeep Roy</h1> <!-- id="home-subhadeep"-->
+                        <div class="change-text">
+                                <h3 id="andim">And I'm</h3>
+                                <h3>
+                                        <span class="word">Jr.&nbsp;Coder</span>
+                                        <span class="word">Frontend&nbsp;Developer</span>
+                                        <span class="word">UI-UX&nbsp;Designer</span>
+                                        <span class="word">AI&nbsp;Enthusiast</span>
+                                </h3>
+                        </div>
+
+
+                        <p>Quick learner who possesses the academic qualifications and technology know-how to be
+                                successful in a range of positions like UI-UX designing, frontend development,
+                                graphics
+                                designing and competitive programming</p>
+
+
+
+                        <div class="social-media">
+                                <a href="https://www.linkedin.com/in/subhadeep3902/" target="_blank"><i
+                                                class='bx bxl-linkedin'></i></a>
+                                <a href="https://twitter.com/mvp_Subha" target="_blank"><i
+                                                class='bx bxl-twitter'></i></a>
+                                <a href="https://www.instagram.com/mvp_subha/" target="_blank"><i
+                                                class='bx bxl-instagram-alt'></i></a>
+                                <a href="https://github.com/subhadeep3902" target="_blank"><i
+                                                class='bx bxl-github'></i></a>
+                        </div>
+                        <a class="btn" href="#about">Know More</a>
+                </div>
+
+
+                <div class="home-img scroll-scale" id="home-img">
+                        <img src="https://i.postimg.cc/VNpMt15C/3.jpg" width="500" height="500" alt="">
+                </div>
+        </section>
+
+        <!--About Section------------------------------------------------------------------------------------------->
+        <section class="about" id="about">
+                <div class="about-img scroll-bottom">
+                        <img src="https://i.postimg.cc/htG73hdm/about.jpg" alt="" width="500" height="500">
+                </div>
+
+                <div class="about-content scroll-scale">
+                        <h2 class="heading">About <span>Me</span></h2>
+
+                        <div class="about-typewriter">
+                                <span class="about-typer first-text">I'm a </span>
+                                <span id="typer" class="about-typer sec-text"></span>
+                        </div>
+                        <script>
+                                const text = document.querySelector(".sec-text");
+                                const textLoad = () => {
+                                        setTimeout(() => {
+                                                text.textContent = "Jr. Coder";
+                                        }, 0);
+                                        setTimeout(() => {
+                                                text.textContent = "Frontend Developer";
+                                        }, 4100);
+                                        setTimeout(() => {
+                                                text.textContent = "UI-UX Designer";
+                                        }, 8000);
+                                        setTimeout(() => {
+                                                text.textContent = "AI Enthusiast";
+                                        }, 12000);
+                                }
+                                textLoad();
+                                setInterval(textLoad, 16000);
+                        </script>
+
+                        <p id="my-about">CSE undergraduate with a lifelong love of problem solving and a fervent
+                                enthusiasm for
+                                graphic design. I'm also a professional chess player. I enjoy speaking with new
+                                individuals and discussing initiatives and new ideas.
+                                <br /><br />
+                                With new information and skills I've learned via practise and a little guidance,
+                                I'm
+                                prepared to widen my horizons. Also, I'm always willing to lend a hand and use
+                                my skills
+                                to advance the objectives of the team.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1d5ZsG9uWvQNUSIOvF5W_AFF7jMExrSsr/view?usp=sharing"
+                                target="_blank" class="btn">Here's My CV</a>
+                </div>
+        </section>
+
+
+
+        <!--Clock--------------------------------------------------------------------------------------------------->
+        <div class="clock scroll-scale">
+                <div class="datetime">
+                        <div class="date">
+                                <span id="dayname">Day</span><span>,</span>
+                                <span id="month">Month</span>
+                                <span id="daynum">00</span><span>,</span>
+                                <span id="year">Year</span>
+                        </div>
+                        <div class="time">
+                                <span id="hour">00</span><span>:</span>
+                                <span id="minutes">00</span><span>:</span>
+                                <span id="seconds">00</span>
+                                <span id="period">am</span>
+                        </div>
+                </div>
+        </div>
+
+
+        <!--Skills Section------------------------------------------------------------------------------------------->
+        <section class="skills" id="skills">
+                <div class="main-text scroll-top">
+                        <h1><span>My </span>Skills</h1>
+                </div>
+
+                <div class="skill-main" id="skill-main">
+                        <div class="skill-left scroll-bottom">
+                                <h3>Technical Skills</h3>
+                                <div class="skill-bar">
+                                        <div class="info">
+                                                <p>HTML</p>
+                                                <p>95%</p>
+                                        </div>
+                                        <div class="bar">
+                                                <span class="html" id="html"></span>
+                                        </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                        <div class="info">
+                                                <p>CSS</p>
+                                                <p>92%</p>
+                                        </div>
+                                        <div class="bar">
+                                                <span class="css"></span>
+                                        </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                        <div class="info">
+                                                <p>JavaScript</p>
+                                                <p>71%</p>
+                                        </div>
+                                        <div class="bar">
+                                                <span class="javascript"></span>
+                                        </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                        <div class="info">
+                                                <p>C</p>
+                                                <p>68%</p>
+                                        </div>
+                                        <div class="bar">
+                                                <span class="c"></span>
+                                        </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                        <div class="info">
+                                                <p>C++</p>
+                                                <p>29%</p>
+                                        </div>
+                                        <div class="bar">
+                                                <span class="c__"></span>
+                                        </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                        <div class="info">
+                                                <p>Python</p>
+                                                <p>82%</p>
+                                        </div>
+                                        <div class="bar">
+                                                <span class="python"></span>
+                                        </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                        <div class="info">
+                                                <p>FIGMA</p>
+                                                <p>41%</p>
+                                        </div>
+                                        <div class="bar">
+                                                <span class="figma"></span>
+                                        </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                        <div class="info">
+                                                <p>Next JS</p>
+                                                <p>9%</p>
+                                        </div>
+                                        <div class="bar">
+                                                <span class="nextjs"></span>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="skill-right scroll-bottom">
+                                <h3>Top-Notch </h3>
+                                <div class="professional" id="professional">
+                                        <div class="box">
+                                                <div class="circle" data-dots="70" data-percent="92"></div>
+                                                <div class="text">
+                                                        <big>92%</big>
+                                                        <small>Communication</small>
+                                                </div>
+                                        </div>
+
+
+                                        <div class="box">
+                                                <div class="circle" data-dots="70" data-percent="100"></div>
+                                                <div class="text">
+                                                        <big>100%</big>
+                                                        <small>Hardworking</small>
+                                                </div>
+                                        </div>
+
+                                        <div class="box">
+                                                <div class="circle" data-dots="70" data-percent="71"></div>
+                                                <div class="text">
+                                                        <big>71%</big>
+                                                        <small>Deciphering</small>
+                                                </div>
+                                        </div>
+
+                                        <div class="box">
+                                                <div class="circle" data-dots="70" data-percent="94"></div>
+                                                <div class="text">
+                                                        <big>94%</big>
+                                                        <small>Team Work</small>
+                                                </div>
+                                        </div>
+
+                                        <div class="box">
+                                                <div class="circle" data-dots="70" data-percent="84"></div>
+                                                <div class="text">
+                                                        <big>84%</big>
+                                                        <small>Time Management</small>
+                                                </div>
+                                        </div>
+
+                                        <div class="box">
+                                                <div class="circle" data-dots="70" data-percent="79"></div>
+                                                <div class="text">
+                                                        <big>79%</big>
+                                                        <small>Resilience</small>
+                                                </div>
+                                        </div>
+
+                                        <div class="box">
+                                                <div class="circle" data-dots="70" data-percent="83"></div>
+                                                <div class="text">
+                                                        <big>83%</big>
+                                                        <small>Diligence</small>
+                                                </div>
+                                        </div>
+
+                                        <div class="box">
+                                                <div class="circle" data-dots="70" data-percent="69"></div>
+                                                <div class="text">
+                                                        <big>69%</big>
+                                                        <small>Multi-tasking</small>
+                                                </div>
+                                        </div>
+
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+
+        <!--Portfolio Section------------------------------------------------------------------------------------------->
+        <section class="portfolio" id="portfolio">
+                <div class="main-text scroll-top">
+                        <h1><span>Education </span>And <span>Experience</span></h1>
+                </div>
+
+                <div class="resume">
+                        <div class="education">
+                                <h1 class="scroll-scale">Education<br /><br /></h1>
+                                <ul id="education-ul" class="scroll-bottom">
+                                        <li style="--accent-color:#41516C">
+                                                <div class="date">2008 - 2022</div>
+                                                <div class="border-div">
+                                                        <div class="title">
+                                                                <h1>India International School</h1>
+                                                        </div>
+                                                        <div class="descr">One of the top CBSE schools in
+                                                                Asansol, West
+                                                                Bengal, is India International School, where I
+                                                                studied.
+                                                                I attended this school as a freshman and a
+                                                                sophomore and
+                                                                am one of the best students in Asansol's CBSE
+                                                                schools.<br><br>
+                                                                Class 10th Grade Card : <a href="https://drive.google.com/file/d/1UaCrRK9Jl1cSqxxmlTk57PGS8rcM19DG/view?usp=sharing" target="_blank" class="tenth">🟢
+                                                                        Click Me 🟢</a>
+                                                                <br><br>
+                                                                Class 12th Grade Card : <a href="https://drive.google.com/file/d/1oL4hWjmdrHDyFwonDPchcwxF9U0tF6TZ/view?usp=sharing" target="_blank" class="tenth">🟢
+                                                                        Click Me 🟢</a>
+                                                        </div>
+                                                </div>
+                                        </li>
+                                        <li style="--accent-color:#FBCA3E">
+                                                <div class="date">2022 - 2026</div>
+                                                <div class="border-div">
+                                                        <div class="title">
+                                                                <h1>Techno Main Salt Lake</h1>
+                                                        </div>
+                                                        <div class="descr">I am currently enrolled in a B.Tech
+                                                                program
+                                                                specializing in Computer Science and Engineering
+                                                                (CSE)
+                                                                at a well-regarded college situated in the
+                                                                thriving city
+                                                                of Kolkata.<br><br>
+                                                                Semester 1 Grade Card : <a href="https://drive.google.com/file/d/1VgwJrvV8nMDeFBNc73g6PR-u0QWm9jjJ/view?usp=sharing" target="_blank" class="tenth">🟢
+                                                                        Click Me 🟢</a>
+                                                        </div>
+                                                </div>
+                                        </li>
+                                </ul>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                        <div class="exp">
+                                <h1 class="scroll-scale">Experience<br /><br /></h1>
+                                <div class="container scroll-bottom">
+                                        <div class="card" style="--clr: #83f603">
+                                                <div class="img-box">
+                                                        <img src="https://i.postimg.cc/2569DGJj/B-Tech-Degree.jpg alt="">
+                                                        </div>
+                                                        <div class=" content">
+                                                        <h2>Tech Team Member</h2>
+                                                        <p>
+                                                                I am a member of IIC TMSL, one of the largest
+                                                                and best
+                                                                teams of Techno Main Salt Lake.
+                                                        </p>
+                                                        <a href="https://www.iictmsl.com/" target="_blank">Know More</a>
+                                                </div>
+                                        </div>
+                                        <div class="card" style="--clr: #83f603">
+                                                <div class="img-box">
+                                                        <img src=https://i.postimg.cc/Kj3rgkv7/volunteer-1.jpg">
+                                                </div>
+                                                <div class="content">
+                                                        <h2>Volunteer</h2>
+                                                        <p>
+                                                                I was in a position of volunteering in the CSE
+                                                                UNITED,
+                                                                the annual and cultural cum alumni meet of
+                                                                Techno Main
+                                                                Salt Lake.
+                                                        </p>
+                                                        <a href="https://www.hastalavistacse.com/" target="_blank">Know
+                                                                More</a>
+                                                </div>
+                                        </div>
+                                        <div class="card" style="--clr: #83f603">
+                                                <div class="img-box">
+                                                        <img
+                                                                src="https://i.postimg.cc/rmPB3JTW/young-kid-playing-video-games-his-room-back-view-generative-ai-kid-playing-video-games-his-room-back.jpg">
+                                                </div>
+                                                <div class="content">
+                                                        <h2>Jr. Coder</h2>
+                                                        <p>
+                                                                At present, a programmer, solving problems at
+                                                                LeetCode, 70+ problems solved also am consistent
+                                                                in
+                                                                GeeksforGeeks
+                                                        </p>
+                                                        <a href="https://leetcode.com/Subhadeep3902/"
+                                                                target="_blank">Know More</a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <!--Projects Section--------------------------------------------------------------------------------------------------------->
+        <section class="projects" id="projects">
+                <div class="main-text scroll-top" id="project-heading">
+                        <h1><span>P</span>rojects</h1>
+                </div>
+
+
+                <div class="wrapper scroll-scale">
+                        <div class="project-box">
+                                <div class="single-box">
+                                        <div class="box-content">
+                                                <div class="sides side-1"
+                                                        style="background-image: url(https://i.postimg.cc/QCccLDRg/iic.jpg);">
+                                                </div>
+                                                <div class="sides side-2">
+                                                        <a href="https://github.com/subhadeep3902/IIC-TMSL-WEBSITE" target="_blank"
+                                                                class="project-content">
+                                                                <h2>IIC TMSL</h2>
+                                                                <p>I had made a website for our esteemed team,
+                                                                        IIC.
+                                                                        Frameworks used are - HTML, CSS,
+                                                                        Javascript.<br>🔴 Click me to see it 🔴
+                                                                </p>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="project-box">
+                                <div class="single-box">
+                                        <div class="box-content">
+                                                <div class="sides side-1"
+                                                        style="background-image: url(https://i.postimg.cc/7L8GtJLQ/weather.jpg);">
+                                                </div>
+                                                <div class="sides side-2">
+                                                        <a href="https://weatherme-chi.vercel.app/" target="_blank"
+                                                                class="project-content">
+                                                                <h2>Weather Me</h2>
+                                                                <p>This is a Material UI based weather website.
+                                                                        It
+                                                                        consists of OpenWeather API and has
+                                                                        graphical
+                                                                        analysics.<br>🔴 Click me to see it 🔴
+                                                                </p>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="project-box">
+                                <div class="single-box">
+                                        <div class="box-content">
+                                                <div class="sides side-1"
+                                                        style="background-image: url(https://i.postimg.cc/VNzLf82s/student-1.jpg);">
+                                                </div>
+                                                <div class="sides side-2">
+                                                        <a href="https://github.com/subhadeep3902/Student-Management-System"
+                                                                target="_blank" class="project-content">
+                                                                <h2>Student Management System</h2>
+                                                                <p>Made with MySQL connectivity, ❤ and
+                                                                        Python.<br>🔴
+                                                                        Click me to see it 🔴</p>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="main-text scroll-scale" id="interests-heading">
+                        <h1>Some cool things I do and did &nbsp;:&#41;</h1>
+                </div>
+                <br />
+                <br />
+                <div class="interests-wrapper scroll-bottom">
+                        <i id="left" class="fa-solid fa-angle-left"></i>
+                        <div class="carousel">
+                                <img src="https://i.postimg.cc/kGq9jW8y/chess-5.jpg" alt="img" draggable="false">
+                                <img src="https://i.postimg.cc/tgQM0RZJ/football-2.jpg" alt="img" draggable="false">
+                                <img src="https://i.postimg.cc/WzZSjyGT/logo.jpg" alt="img" draggable="false">
+                                <img src="https://i.postimg.cc/1RMYRx15/logo-1.jpg" alt="img" draggable="false">
+                                <img src="https://i.postimg.cc/pVFFxQrW/batman-2.jpg alt=" img" draggable="false">
+                                <img src="https://i.postimg.cc/rm8f1g29/mission.jpg" alt="img" draggable="false">
+                                <img src="https://i.postimg.cc/Hkm2bBgP/drawing.jpg" alt="img" draggable="false">
+                                <img src="https://i.postimg.cc/qq0R1hv0/drawing2.jpg" alt="img" draggable="false">
+                                <img src="https://i.postimg.cc/prwts3Zj/drawing2-1.jpg" alt="img" draggable="false">
+                        </div>
+                        <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+        </section>
+
+
+        <!--Testimonials--------------------------------------------------------------------------------------------------------->
+        <section class="testimonials" id="testimonials">
+                <div class="main-text scroll-top" id="project-heading">
+                        <h1>Recommendations Not Yet <span>Received</span></h1>
+                </div>
+        </section>
+
+
+        <!--Contact Us--------------------------------------------------------------------------------------------------------->
+        <section class="contact" id="contact">
+                <div class="main-text scroll-top" id="project-heading">
+                        <h1><span>Let's</span> Get in <span>Touch</span></h1>
+                </div>
+
+                <div id="contact-xd">
+                        <div class="contact-container scroll-bottom">
+                                <div class="contact-left">
+
+                                        <h3 class="contact-heading">Arigato :&#41;</h3>
+                                        <p class="contact-text">For Visiting in here.</p>
+
+                                        <br />
+                                        <form name="submit-to-google-sheet">
+                                                <div class="inputbox">
+                                                        <input type="text" name="Name" class="name"
+                                                                placeholder="Your Name" />
+                                                </div>
+                                                <div class="inputbox">
+                                                        <input type="text" name="Email" class="email"
+                                                                placeholder="Your Email" />
+                                                </div>
+                                                <div class="inputbox">
+                                                        <textarea type="text" name="Message" class="message"
+                                                                placeholder="Write Your Message..."></textarea>
+                                                </div>
+                                                <button class="contact-btn">Send</button>
+                                        </form>
+                                </div>
+
+                                <div class="contact-right">
+                                        <div class="illustration">
+                                                <!--<img src="https://i.postimg.cc/vZcZh56v/ame-1.jpg" alt="">-->
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.0995026857363!2d86.9745620752549!3d23.672399378723668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71ecdc352e3f7%3A0x9c52e973801cd456!2sSunview%20Park%20Rd%2C%20Mohishila%20Colony%2C%20Asansol%2C%20West%20Bengal%20713303!5e0!3m2!1sen!2sin!4v1687205077629!5m2!1sen!2sin"
+                                                        width="500" height="265" style="border:0;" allowfullscreen=""
+                                                        loading="lazy"
+                                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+
+                                        <div class="contact-info">
+                                                <div class="infobox">
+                                                        <div class="icon">
+                                                                <ion-icon name="locate"></ion-icon>
+                                                        </div>
+                                                        <div class="contact-text">
+                                                                <p id="Mohishila">Mohishila Colony, Asansol</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="infobox">
+                                                        <div class="icon">
+                                                                <ion-icon name="call"></ion-icon>
+                                                        </div>
+                                                        <div class="contact-text">
+                                                                <a href="tel:+91 86373 73116" id="my-number">+91
+                                                                        86373
+                                                                        73116</a>
+                                                        </div>
+                                                </div>
+
+                                                <div class="infobox">
+                                                        <div class="icon">
+                                                                <ion-icon name="mail"></ion-icon>
+                                                        </div>
+                                                        <div class="contact-text">
+                                                                <a href="mailto:subha9.5roy350@gmail.com"
+                                                                        id="my-email-id">subha9.5roy350@gmail.com</a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <br />
+                                <div class="contact-social-icons">
+                                        <a href="https://twitter.com/mvp_Subha" target="_blank"><ion-icon
+                                                        class="social-icon" name="logo-twitter"></ion-icon></a>
+                                        <a href="https://www.linkedin.com/in/subhadeep3902/" target="_blank"><ion-icon
+                                                        class="social-icon" name="logo-linkedin"></ion-icon></a>
+                                        <a href="https://www.instagram.com/mvp_subha/" target="_blank"><ion-icon
+                                                        class="social-icon" name="logo-instagram"></ion-icon></a>
+                                        <a href="https://github.com/subhadeep3902" target="_blank"><ion-icon
+                                                        class="social-icon" name="logo-github"></ion-icon></a>
+                                </div>
+                        </div>
+                </div>
+
+        </section>
+        <footer id="foot">
+                <p><a href="#" class="footer-a">@All Rights Reserved</a> &nbsp;||&nbsp; Made with ❤ by <a
+                                href="humans_adi.txt" target="_blank" class="footer-a">Subhadeep Roy</a></p>
+                <a href="#home" class="arrow-up"><i class="bx bx-up-arrow-alt"></i></a>
+        </footer>
+        <script src="js/script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

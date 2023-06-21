@@ -142,6 +142,9 @@
 }
 
 @media (max-width: 420px) {
+  ::-webkit-scrollbar{
+    width: 0;
+  }
   .html {
     font-size: 80%;
     overflow-x: hidden;

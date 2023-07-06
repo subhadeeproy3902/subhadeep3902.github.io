@@ -1184,12 +1184,12 @@ span {
 
 @media (max-width: 480px) {
   .container .card {
-    width: 230px;
+    width: 280px;
     border-radius: 15px;
   }
 
   .container .card .img-box {
-    width: 185px;
+    width: 250px;
     border-radius: 10px;
   }
 

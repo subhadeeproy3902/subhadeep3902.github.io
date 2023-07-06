@@ -1741,6 +1741,7 @@ footer p {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  z-index: -1;
 }
 
 @media (max-width: 420px){

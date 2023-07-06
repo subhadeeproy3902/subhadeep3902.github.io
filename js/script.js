@@ -354,7 +354,6 @@ scrollBottom.forEach((e1) => observer.observe(e1));
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((e1) => observer.observe(e1));
 
-
 //Preloader//////////////////////////////////////////////////////////////////////////
 
 gsap.fromTo(
@@ -400,3 +399,76 @@ gsap.fromTo(
     delay: 2.9,
   }
 );
+
+/*TESTIMONIALS--------------------------------------------------------------*/
+const testimonialsContainer = document.querySelector(".testimonials-container");
+const testimonial = document.querySelector(".testimonial");
+const userImage = document.querySelector(".user-image");
+const username = document.querySelector(".username");
+const role = document.querySelector(".role");
+
+const testimonials = [
+  {
+    name: "hello world",
+    position: "jetso",
+    photo: "",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur nulla ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
+  },
+  {
+    name: "world hello",
+    position: "sugoi",
+    photo: "",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl.  sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
+  },
+  {
+    name: "Iida Niskanen",
+    position: "Data Entry",
+    photo: "",
+    text: "Lorem ipsum e efficitur nulla ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
+  },
+  {
+    name: "your mom",
+    position: "69",
+    photo: "",
+    text: "Lorem ipsum dolor si ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
+  },
+  {
+    name: "lalalala",
+    position: "hulalalla",
+    photo: "",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur nulla ac lobortis. Cras risus nunc, sollicit",
+  },
+  {
+    name: "Hogalallah",
+    position: "Himlands",
+    photo: "",
+    text: "Lorem ipsum dolor sit Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
+  },
+  {
+    name: "Subhadeep Roy",
+    position: "Wholesome boy :)",
+    photo: "",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur nulla ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
+  },
+];
+
+let idx = 1;
+
+function updateTestimonial() {
+  const { name, position, photo, text } = testimonials[idx];
+
+  testimonial.innerHTML = text;
+  userImage.src = photo;
+  username.innerHTML = name;
+  role.innerHTML = position;
+
+  idx++;
+
+  if (idx > testimonials.length - 1) {
+    idx = 0;
+  }
+}
+
+setInterval(updateTestimonial, 4000);
+
+/*Cursor--------------------------------------------------------------*/

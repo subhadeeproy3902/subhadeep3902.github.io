@@ -355,7 +355,6 @@ const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((e1) => observer.observe(e1));
 
 //Preloader//////////////////////////////////////////////////////////////////////////
-
 gsap.fromTo(
   ".loading-page",
   { opacity: 1 },
@@ -381,7 +380,7 @@ gsap.fromTo(
 );
 
 gsap.fromTo(
-  "section, .clock",
+  "section, .clock, .colors",
   { opacity: 0 },
   {
     opacity: 1,
@@ -411,43 +410,43 @@ const testimonials = [
   {
     name: "hello world",
     position: "jetso",
-    photo: "",
+    photo: "https://i.postimg.cc/1XBZ6S02/hero-l-5.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur nulla ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
   },
   {
     name: "world hello",
     position: "sugoi",
-    photo: "",
+    photo: "https://i.postimg.cc/1XBZ6S02/hero-l-5.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl.  sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
   },
   {
     name: "Iida Niskanen",
     position: "Data Entry",
-    photo: "",
+    photo: "https://i.postimg.cc/1XBZ6S02/hero-l-5.png",
     text: "Lorem ipsum e efficitur nulla ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
   },
   {
-    name: "your mom",
-    position: "69",
-    photo: "",
+    name: "gonjavis",
+    position: "frenchi",
+    photo: "https://i.postimg.cc/1XBZ6S02/hero-l-5.png",
     text: "Lorem ipsum dolor si ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
   },
   {
     name: "lalalala",
     position: "hulalalla",
-    photo: "",
+    photo: "https://i.postimg.cc/1XBZ6S02/hero-l-5.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur nulla ac lobortis. Cras risus nunc, sollicit",
   },
   {
     name: "Hogalallah",
     position: "Himlands",
-    photo: "",
+    photo: "https://i.postimg.cc/1XBZ6S02/hero-l-5.png",
     text: "Lorem ipsum dolor sit Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
   },
   {
     name: "Subhadeep Roy",
     position: "Wholesome boy :)",
-    photo: "",
+    photo: "https://i.postimg.cc/1XBZ6S02/hero-l-5.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur nulla ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
   },
 ];
@@ -471,4 +470,50 @@ function updateTestimonial() {
 
 setInterval(updateTestimonial, 4000);
 
-/*Cursor--------------------------------------------------------------*/
+/*Light theme--------------------------------------------------------------*/
+
+const toggleSwitch = document.getElementById("colors");
+const heroImage = document.getElementById("hero-image");
+const body = document.querySelector("body");
+const aboutImage = document.getElementById("about-img");
+
+const cImg1 = document.getElementById("c-img-1");
+const cImg2 = document.getElementById("c-img-2");
+const cImg3 = document.getElementById("c-img-3");
+const cImg4 = document.getElementById("c-img-4");
+const cImg5 = document.getElementById("c-img-5");
+const cImg6 = document.getElementById("c-img-6");
+const cImg7 = document.getElementById("c-img-7");
+const cImg8 = document.getElementById("c-img-8");
+const cImg9 = document.getElementById("c-img-9");
+
+toggleSwitch.addEventListener("click", function () {
+  body.classList.toggle("switch");
+  if (body.classList.contains("switch")) {
+    heroImage.src = "https://i.postimg.cc/3wpFGY09/hero-l.png";
+    aboutImage.src = "https://i.postimg.cc/K8Bvn2hK/about-4.png";
+
+    cImg1.src = "https://i.postimg.cc/j2fRJW1W/chess-13.png";
+    cImg2.src = "https://i.postimg.cc/Df4vNDz2/chess-14.png";
+    cImg3.src = "https://i.postimg.cc/BQCd7c2S/chess-15.png";
+    cImg4.src = "https://i.postimg.cc/C5csk1fg/chess-16.png";
+    cImg5.src = "https://i.postimg.cc/g0pLcpnq/chess-17.png";
+    cImg6.src = "https://i.postimg.cc/d1t7d9Rh/chess-18.png";
+    cImg7.src = "https://i.postimg.cc/XYjXt8hQ/chess-19.png";
+    cImg8.src = "https://i.postimg.cc/mgmh49WR/chess-20.png";
+    cImg9.src = "https://i.postimg.cc/BbSjTBx8/chess-12.png";
+  } else {
+    heroImage.src = "https://i.postimg.cc/1XBZ6S02/hero-l-5.png";
+    aboutImage.src = "https://i.postimg.cc/59TyNqKV/about-2.png";
+
+    cImg1.src = "https://i.postimg.cc/cHL9PQmY/chess-3.png";
+    cImg2.src = "https://i.postimg.cc/ryt3T9TC/chess-4.png";
+    cImg3.src = "https://i.postimg.cc/jd09SJdV/chess-5.png";
+    cImg4.src = "https://i.postimg.cc/NjQz1qHp/chess-6.png";
+    cImg5.src = "https://i.postimg.cc/kXGVDDjc/chess-7.png";
+    cImg6.src = "https://i.postimg.cc/vB8YjSkz/chess-8.png";
+    cImg7.src = "https://i.postimg.cc/HsNrMHRC/chess-9.png";
+    cImg8.src = "https://i.postimg.cc/wjs7cZYR/chess-10.png";
+    cImg9.src = "https://i.postimg.cc/3ws60yCD/chess-11.png";
+  }
+});

@@ -1621,7 +1621,7 @@ span {
   gap: 80px;
   border-radius: 20px;
   background: var(--secon-bg-color);
-  box-shadow: 0 8px 32px 0 rgba(156, 157, 158, 0.37);
+  box-shadow: 0 8px 32px 0 rgb(255 78 0 / 50%);
 }
 
 .contact-left {

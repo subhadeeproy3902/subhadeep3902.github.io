@@ -27,6 +27,9 @@
     0 0 80px rgba(255, 0, 0, 0.6), 0 0 100px rgba(255, 0, 0, 0.6),
     0 0 150px rgba(255, 0, 0, 0.6);
 }
+.switch #svg{
+  color: #000;
+}
 .switch .contact-container{
   box-shadow: 0 8px 32px 0 rgb(255 78 0 / 50%);
 }

@@ -151,10 +151,6 @@
 .switch .project-content p {
   color: #fff;
 }
-.switch .interests-wrapper i {
-  background: #343f4f;
-  color: #fff;
-}
 .switch .testimonial-container {
   color: #000;
 }
@@ -1306,8 +1302,6 @@ span {
   height: 400px;
   box-shadow: 0 0 5px 5px var(--lime-green);
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
 }
 
 .container .card .img-box {
@@ -1517,91 +1511,6 @@ span {
     padding-bottom: 4rem;
   }
 }
-
-/* Interests //////////////////////////////////////////////////////////////////////*/
-#interests-heading {
-  padding-top: 1.5rem;
-  text-align: center;
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
-
-#interests-heading h1 {
-  font-size: 2rem;
-  padding-bottom: 2rem;
-}
-
-.interests-wrapper {
-  padding-bottom: 4rem;
-  display: flex;
-  max-width: 1200px;
-  position: relative;
-}
-.interests-wrapper i {
-  top: 45%;
-  height: 44px;
-  width: 44px;
-  color: #343f4f;
-  cursor: pointer;
-  font-size: 1.15rem;
-  position: absolute;
-  text-align: center;
-  line-height: 44px;
-  background: #fff;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-}
-.interests-wrapper i:active {
-  transform: translateY(-50%) scale(0.9);
-}
-.interests-wrapper i:hover {
-  background: #c5bfbf;
-}
-.interests-wrapper i:first-child {
-  left: -22px;
-  display: none;
-}
-.interests-wrapper i:last-child {
-  right: -22px;
-}
-.interests-wrapper .carousel {
-  font-size: 0px;
-  cursor: pointer;
-  overflow: hidden;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-}
-.carousel.dragging {
-  cursor: grab;
-  scroll-behavior: auto;
-}
-.carousel.dragging img {
-  pointer-events: none;
-}
-.carousel img {
-  height: 340px;
-  object-fit: cover;
-  user-select: none;
-  margin-left: 5px;
-  width: calc(100% / 3);
-}
-.carousel img:first-child {
-  margin-left: 20px;
-}
-@media screen and (max-width: 900px) {
-  .carousel img {
-    width: calc(100% / 2);
-  }
-}
-@media screen and (max-width: 550px) {
-  .carousel img {
-    width: 100%;
-  }
-}
-
-/*Interests--------------------------------------------------ENDS------------------------*/
 
 /*Contacts------------------------------------------------------------------------*/
 .contact {
@@ -1823,7 +1732,7 @@ form {
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 15px;
     padding: 20px;
   }
 

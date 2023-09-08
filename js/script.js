@@ -139,79 +139,6 @@ function Clock() {
   window.setInterval("updateClock()", 1);
 }
 
-const carousel = document.querySelector(".carousel"),
-  firstImg = carousel.querySelectorAll("img")[0],
-  arrowIcons = document.querySelectorAll(".interests-wrapper i");
-let isDragStart = false,
-  isDragging = false,
-  prevPageX,
-  prevScrollLeft,
-  positionDiff;
-const showHideIcons = () => {
-  // showing and hiding prev/next icon according to carousel scroll left value
-  let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
-  arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
-  arrowIcons[1].style.display =
-    carousel.scrollLeft == scrollWidth ? "none" : "block";
-};
-arrowIcons.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
-    // if clicked icon is left, reduce width value from the carousel scroll left else add to it
-    carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
-    setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
-  });
-});
-const autoSlide = () => {
-  // if there is no image left to scroll then return from here
-  if (
-    carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 ||
-    carousel.scrollLeft <= 0
-  )
-    return;
-  positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
-  let firstImgWidth = firstImg.clientWidth + 14;
-  // getting difference value that needs to add or reduce from carousel left to take middle img center
-  let valDifference = firstImgWidth - positionDiff;
-  if (carousel.scrollLeft > prevScrollLeft) {
-    // if user is scrolling to the right
-    return (carousel.scrollLeft +=
-      positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff);
-  }
-  // if user is scrolling to the left
-  carousel.scrollLeft -=
-    positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-};
-const dragStart = (e) => {
-  // updatating global variables value on mouse down event
-  isDragStart = true;
-  prevPageX = e.pageX || e.touches[0].pageX;
-  prevScrollLeft = carousel.scrollLeft;
-};
-const dragging = (e) => {
-  // scrolling images/carousel to left according to mouse pointer
-  if (!isDragStart) return;
-  e.preventDefault();
-  isDragging = true;
-  carousel.classList.add("dragging");
-  positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-  carousel.scrollLeft = prevScrollLeft - positionDiff;
-  showHideIcons();
-};
-const dragStop = () => {
-  isDragStart = false;
-  carousel.classList.remove("dragging");
-  if (!isDragging) return;
-  isDragging = false;
-  autoSlide();
-};
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("touchstart", dragStart);
-document.addEventListener("mousemove", dragging);
-carousel.addEventListener("touchmove", dragging);
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("touchend", dragStop);
-
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
@@ -461,39 +388,13 @@ const heroImage = document.getElementById("hero-image");
 const body = document.querySelector("body");
 const aboutImage = document.getElementById("about-img");
 
-const cImg1 = document.getElementById("c-img-1");
-const cImg2 = document.getElementById("c-img-2");
-const cImg3 = document.getElementById("c-img-3");
-const cImg4 = document.getElementById("c-img-4");
-const cImg5 = document.getElementById("c-img-5");
-const cImg6 = document.getElementById("c-img-6");
-const cImg7 = document.getElementById("c-img-7");
-const cImg8 = document.getElementById("c-img-8");
-const cImg9 = document.getElementById("c-img-9");
-
 toggleSwitch.addEventListener("click", function () {
   body.classList.toggle("switch");
   if (body.classList.contains("switch")) {
     heroImage.src = "https://i.postimg.cc/MTVGGbsX/hlabsdfkjhsf-7.webp";
     aboutImage.src = "https://i.postimg.cc/hGSFm8Pf/hlabsdfkjhsf-8.webp";
-
-    cImg1.src = "https://i.postimg.cc/2yLbWcQD/hlabsdfkjhsf-15.webp";
-    cImg2.src = "https://i.postimg.cc/yxNqptfM/hlabsdfkjhsf-16.webp";
-    cImg3.src = "https://i.postimg.cc/sXYSH0B4/hlabsdfkjhsf-17.webp";
-    cImg4.src = "https://i.postimg.cc/VsFZdK7t/hlabsdfkjhsf-20.webp";
-    cImg5.src = "https://i.postimg.cc/tCWT3VxF/hlabsdfkjhsf-19.webp";
-    cImg6.src = "https://i.postimg.cc/wjn0SZBC/hlabsdfkjhsf-21.webp";
-    cImg9.src = "https://i.postimg.cc/Zq3VZHBC/hlabsdfkjhsf-22.webp";
   } else {
     heroImage.src = "https://i.postimg.cc/rm5Sn6qQ/Untitled-design-16.webp";
     aboutImage.src = "https://i.postimg.cc/j2XyTzwf/Untitled-design-17.webp";
-
-    cImg1.src = "https://i.postimg.cc/LXV9j02g/hlabsdfkjhsf-6.webp";
-    cImg2.src = "https://i.postimg.cc/6Q0h7ny6/hlabsdfkjhsf-9.webp";
-    cImg3.src = "https://i.postimg.cc/3NzrH3DM/hlabsdfkjhsf-10.webp";
-    cImg4.src = "https://i.postimg.cc/8kxrGGGP/hlabsdfkjhsf-11.webp";
-    cImg5.src = "https://i.postimg.cc/NFtq8LTj/hlabsdfkjhsf-12.webp";
-    cImg6.src = "https://i.postimg.cc/85hxCD3Q/hlabsdfkjhsf-13.webp";
-    cImg9.src = "https://i.postimg.cc/VL7pvK76/hlabsdfkjhsf-14.webp";
   }
 });

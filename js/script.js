@@ -310,7 +310,7 @@ gsap.fromTo(
   }
 );
 
-/*TESTIMONIALS--------------------------------------------------------------*/
+/*TESTIMONIALS--------------------------------------------------------------
 const testimonialsContainer = document.querySelector(".testimonials-container");
 const testimonial = document.querySelector(".testimonial");
 const userImage = document.querySelector(".user-image");
@@ -379,7 +379,7 @@ function updateTestimonial() {
   }
 }
 
-setInterval(updateTestimonial, 4000);
+setInterval(updateTestimonial, 4000);*/
 
 /*Light theme--------------------------------------------------------------*/
 

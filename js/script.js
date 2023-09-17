@@ -310,7 +310,7 @@ gsap.fromTo(
   }
 );
 
-/*TESTIMONIALS--------------------------------------------------------------
+//TESTIMONIALS--------------------------------------------------------------
 const testimonialsContainer = document.querySelector(".testimonials-container");
 const testimonial = document.querySelector(".testimonial");
 const userImage = document.querySelector(".user-image");
@@ -319,46 +319,16 @@ const role = document.querySelector(".role");
 
 const testimonials = [
   {
-    name: "hello world",
-    position: "jetso",
-    photo: "https://i.postimg.cc/rm5Sn6qQ/Untitled-design-16.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur nulla ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
+    name: "Arkajit Chakraborty",
+    position: "He managed me directly",
+    photo: "https://i.postimg.cc/yxpk5Z8V/1639068512407-1.webp",
+    text: "Subhadeep is a talented web developer who recently crafted a website for Eclectica, the official literary club of Techno Main Saltlake. His expertise in web design and coding is impressive. He not only met my requirements but exceeded my expectations with a visually appealing and functional site. Throughout the project, his communication and dedication were exemplary. I highly recommend him to anyone seeking a skilled and reliable web developer. He's a valuable asset to any project.",
   },
   {
-    name: "world hello",
-    position: "sugoi",
-    photo: "https://i.postimg.cc/rm5Sn6qQ/Untitled-design-16.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl.  sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
-  },
-  {
-    name: "Iida Niskanen",
-    position: "Data Entry",
-    photo: "https://i.postimg.cc/rm5Sn6qQ/Untitled-design-16.webp",
-    text: "Lorem ipsum e efficitur nulla ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
-  },
-  {
-    name: "gonjavis",
-    position: "frenchi",
-    photo: "https://i.postimg.cc/rm5Sn6qQ/Untitled-design-16.webp",
-    text: "Lorem ipsum dolor si ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
-  },
-  {
-    name: "lalalala",
-    position: "hulalalla",
-    photo: "https://i.postimg.cc/rm5Sn6qQ/Untitled-design-16.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur nulla ac lobortis. Cras risus nunc, sollicit",
-  },
-  {
-    name: "Hogalallah",
-    position: "Himlands",
-    photo: "https://i.postimg.cc/rm5Sn6qQ/Untitled-design-16.webp",
-    text: "Lorem ipsum dolor sit Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
-  },
-  {
-    name: "Subhadeep Roy",
-    position: "Wholesome boy :)",
-    photo: "https://i.postimg.cc/rm5Sn6qQ/Untitled-design-16.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac sem in turpis pellentesque fermentum. Sed quis diam eu nibh iaculis mollis sit amet ut nisl. Duis molestie efficitur nulla ac lobortis. Cras risus nunc, sollicitudin a quam non, aliquam elementum arcu. Maecenas sit amet ex ut enim suscipit consectetur dignissim quis nulla.",
+    name: "Aditya Seth",
+    position: "He managed me directly",
+    photo: "https://i.postimg.cc/MTP6K825/1687584857256-1.webp",
+    text: "Subhadeep is an exceptional developer who possesses all the skills one would want in an excellent software developer. From Python to JavaScript and CSS to C++, he masters the top programming languages. He has been a great resource to my community. He did an incredible job on all projects, making timely deliveries. His work is always top-notch, and he is always welcoming to feedback and making improvements. Plus, Subhadeep is self-motivated and a great team player.",
   },
 ];
 
@@ -379,7 +349,7 @@ function updateTestimonial() {
   }
 }
 
-setInterval(updateTestimonial, 4000);*/
+setInterval(updateTestimonial, 4000);
 
 /*Light theme--------------------------------------------------------------*/
 

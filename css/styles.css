@@ -25,10 +25,10 @@
     0 0 80px rgba(255, 0, 0, 0.6), 0 0 100px rgba(255, 0, 0, 0.6),
     0 0 150px rgba(255, 0, 0, 0.6);
 }
-.switch #svg{
+.switch #svg {
   color: #000;
 }
-.switch .contact-container{
+.switch .contact-container {
   box-shadow: 0 8px 32px 0 rgb(255 78 0 / 50%);
 }
 .switch {
@@ -165,7 +165,7 @@
 .switch .inputbox textarea {
   color: #000;
 }
-.switch .contact-btn{
+.switch .contact-btn {
   color: #fff;
 }
 .switch .contact-btn:hover {
@@ -1906,11 +1906,11 @@ footer p {
   background-color: var(--bg-color);
   color: #fff;
   border-radius: 15px;
-  margin: 30px auto;
+  margin: 0 auto;
   margin-bottom: 5rem;
   padding: 50px 80px;
   max-width: 768px;
-  height: 400px;
+  height: 450px;
   position: relative;
   box-shadow: inset 0 0 20px 10px var(--hover-color);
 }
@@ -1946,7 +1946,8 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
+  gap: 10px;
 }
 
 .user .user-image {
@@ -2015,7 +2016,7 @@ footer p {
     font-size: 0.8rem;
   }
   .testimonial-container {
-    height: 520px;
+    height: 620px;
   }
   .progress-bar {
     margin-top: 1.1rem;
